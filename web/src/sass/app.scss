@@ -1,0 +1,40 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.fetching-wrap {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.fetching-wrap.fetching {
+  opacity: 0;
+}
+
+.logs-list {
+	list-style-type: none;
+	font-family: Consolas, Courier New, Courier, monospace;
+}
+
+.metrics-slot {
+	text-align: center;
+	border-radius: 4px;
+	height: 200px;
+	line-height: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.metrics-slot-jumbonum {
+	font-size: 400%;
+}
+
+.metrics-slot-green {
+	background-color: rgba(0, 255, 0, 0.3);
+}
+
+.metrics-slot-yellow {
+	background-color: rgba(255, 255, 0, 0.3);
+}
+
+.metrics-slot-red {
+	background-color: rgba(255, 0, 0, 0.3);
+}
